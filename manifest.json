@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Drink Water Reminder",
+  "version": "1.0.0",
+  "description": "Shows a full-screen reminder at your chosen interval to drink water.",
+  "permissions": ["alarms", "storage", "notifications", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Drink Water Reminder"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
